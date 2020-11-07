@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
-// import CSK form './images/CSK.png';
-// import MI form './images/MI.png';
+import CSK from "./images/CSK.png";
+import MI from "./images/MI.png";
 import Header from "./Header.js";
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      msg: "180",
+      msg: 180,
     };
   }
   render() {
@@ -15,9 +15,9 @@ class App extends React.Component {
       <React.Fragment>
         <Header />
         <div id="team1">CHENNAI SUPER KINGS</div>
-        {/* <img id="image1" src={CSk}/> */}
+        <img id="image1" src={CSK} />
         <div id="team2">MUMBAI INDIANS</div>
-        {/* <img id="image2" src={MI}/> */}
+        <img id="image2" src={MI} />
         <h4>MI has to score {this.state.msg} against CSK to win this T20</h4>
       </React.Fragment>
     );
